@@ -1,3 +1,3 @@
 # notes
 
-### [passByValueOrPassByReference](https://github.com/jinkya/notes/blob/master/passByValueOrPassByReference.md)
+### [Pass by Value and Pass By Reference ](https://github.com/jinkya/notes/blob/master/passByValueOrPassByReference.md)

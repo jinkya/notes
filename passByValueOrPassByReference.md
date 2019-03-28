@@ -52,7 +52,7 @@ Doesn't it seem much easier? Wait its not that simple
 	f2(x,y,z);
 	console.log(x,y,z); // 1 {val: "hero"} {val:"Anamika"}
 	
-Now go duck and draw your own conclusion. 😉
+Now go duck and draw your own conclusion. 😉  
 If you change the parameter itself that will not affect the item that is fed into parameter, but changing internals of a parameter that will propagate up.    
 Technically it is [call by sharing](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing).
 

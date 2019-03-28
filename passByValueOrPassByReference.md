@@ -15,6 +15,8 @@ For more details, The Evaluation strategies reference in [wiki](https://en.wikip
 -   When a parameter is  **passed by value**, the caller and callee have  **two independent variables**with the same value. If the callee modifies the parameter variable, the effect is not visible to the caller.  
 *caller is calling the callee
 
+For getting more clarity of the memory with reference to pass by reference and pass by valur refer this [cool article](https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php)  
+
 ![Pass by Value vs Reference Animated Gif](https://www.mathwarehouse.com/programming/images/pass-by-reference-vs-pass-by-value-animation.gif)
 
 ### Language Agnostic Approach

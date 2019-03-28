@@ -23,51 +23,36 @@ For more details, The Evaluation strategies reference in [wiki](https://en.wikip
 Javascript is always pass by value but when a var refers to an object(including arrays), the "value" is a reference to the object.
 
 	function f1(a,b,c){
-		a = 3;
-		b.push("flagA")
-		c.val = false
+		a = 5;
+		b.push('flag_jinkya');
+		c.val = true;
 	}
 
-	var x = 1;
-	var y = [ 'flag1', 'flag2' ]
-	var z = { val: true }
-	
-	let p = 2;
-	let q = [ 'flag3', 'flag4' ]
-	let r = { val: true }
-	
-	f1(x,y,z)
-	console.log(x, y, z) 
-	// 1  ["flag1", "flag2", "flagA"] {val: false}
-	
-	f1(p, q, r)
-	console.log(p, q, r)
-	// 2  ["flag3", "flag4", "flagA"] {val: false}
+	x = 1;
+	y = [ 'flag_0', 'flag_1' ];
+	z = { val : false };
+
+	console.log(x,y,z); // 1 ["flag_0", "flag_1"] { val: false }
+	f1(x,y,z);
+	console.log(x,y,z); // 1 ["flag_0", "flag_1", "flag_jinkya"] { val: true }
 
 Doesn't it seem much easier? Wait its not that simple  
 
-	function f2(x, y, z){
-		x = x * 10;
-		y.val = "hero";
-		z = { val: "heroine" };	
+	function f2(a,b,c){
+		a = a*10;
+		b.val = "hero";
+		c = { val: "heroine" }
 	}
 
-	var a = 1;
-	var b = { val: 'ajinkya' };
-	var c = { val: 'aarunya' };
+	x = 1;
+	y = { val: "Ajinkya" };
+	z = { val: "Anamika" };
 
-	let p = 1;
-	let q = { val: 'rajesh' };
-	let r = { val: 'ujwala' };
+	console.log(x,y,z); // 1 {val: "Ajinkya"} {val:"Anamika"}
+	f2(x,y,z);
+	console.log(x,y,z); // 1 {val: "hero"} {val:"Anamika"}
 	
-	f2(a, b, c);
-	console.log(a, b, c);
-	// 1 {val: "hero"} {val: "aarunya"}
-	
-	f2(p, q, r);
-	console.log(p, q, r)
-	// 1 {val: "hero"} {val: "ujwala"}
-	
+Now go duck and draw your own conclusion. 😉
 If you change the parameter itself that will not affect the item that is fed into parameter, but changing internals of a parameter that will propagate up.    
 Technically it is [call by sharing](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing).
 

@@ -59,6 +59,7 @@ If you change the parameter itself that will not affect the item that is fed int
 Technically it is [call by sharing](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing).
 
 #### Python 
-
+Well, I tried to go through Python Docs and they avoids using either term.  
+But I would like to navigate you to [this article](https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/) which says its neither which might makes it more confusing.  
 
 ... to be continued

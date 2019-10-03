@@ -1,4 +1,4 @@
-## Google interview - a month away!
+## G interview - a month away!
 
 Before heading towards the heavy stuffs, we will solidify our base.
 
@@ -55,5 +55,3 @@ Before heading towards the heavy stuffs, we will solidify our base.
 
 
 ---
-- 26 April 2019  
-  Preparation starts
